@@ -63,9 +63,9 @@ The `MiddlewareConsumer` is a helper class. It provides several built-in methods
 
 Consider using the simpler functional middleware alternative any time your middleware doesn't need any dependencies.
 
-In order to bind multiple middleware that are executed sequentially, simply provide a comma separated list inside the apply() method.
+In order to bind multiple middleware that are executed sequentially, simply provide a comma separated list inside the `apply()` method.
 
-Global middleware: If we want to bind middleware to every registered route at once, we can use the use() method that is supplied by the INestApplication instance
+Global middleware: If we want to bind middleware to every registered route at once, we can use the `use()` method that is supplied by the `INestApplication` instance
 
 ```typescript
 const app = await NestFactory.create(AppModule);
@@ -73,4 +73,4 @@ app.use(logger);
 await app.listen(3000);
 ```
 
-Accessing the DI container in a global middleware is not possible. You can use a functional middleware instead when using app.use(). Alternatively, you can use a class middleware and consume it with .forRoutes('\*') within the AppModule (or any other module).
+Accessing the DI container in a global middleware is not possible. You can use a functional middleware instead when using `app.use()`. Alternatively, you can use a class middleware and consume it with `.forRoutes('\*')` within the `AppModule` (or any other module).
