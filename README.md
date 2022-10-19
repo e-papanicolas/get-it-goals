@@ -5,7 +5,11 @@ A goals app to practice writing object oriented code in TypeScript.
 ## Technologies
 
 - Typescript
-- Nest.js
+- Nest.js | back end framework
+- Jest | testing
+- Docker | database container
+- PostgreSQL | relational database
+- TypeORM | typescript object relational mapper
 
 ## Installation
 
