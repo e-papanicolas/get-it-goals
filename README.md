@@ -127,3 +127,7 @@ Interceptors have great value in creating re-usable solutions to requirements th
 Nest is built around a language feature called decorators. An ES2016 decorator is an expression which returns a function and can take a target, name and property descriptor as arguments. You apply it by prefixing the decorator with an `@` character and placing this at the very top of what you are trying to decorate. Decorators can be defined for either a class, a method or a property.
 
 For TypeScript users, note that `createParamDecorator<T>()` is a generic. This means you can explicitly enforce type safety, for example `createParamDecorator<string>((data, ctx) => ...)`. Alternatively, specify a parameter type in the factory function, for example `createParamDecorator((data: string, ctx) => ...)`. If you omit both, the type for data will be any.
+
+## Docker
+
+Start the PostgreSQL database in a Docker container by running `docker compose up` in the root directory.
